@@ -1,0 +1,4 @@
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home"; import Sims from "./pages/Sims"; import SimDetails from "./pages/SimDetails"; import Networks from "./pages/Networks"; import NetworkDetails from "./pages/NetworkDetails"; import Guide from "./pages/Guide"; import About from "./pages/About";
+export default function App() { return <Routes><Route element={<Layout />}><Route path="/" element={<Home />} /><Route path="/sims" element={<Sims />} /><Route path="/sims/:id" element={<SimDetails />} /><Route path="/networks" element={<Networks />} /><Route path="/networks/:id" element={<NetworkDetails />} /><Route path="/guide" element={<Guide />} /><Route path="/about" element={<About />} /></Route></Routes> }
